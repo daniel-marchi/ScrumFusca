@@ -9,6 +9,8 @@
             var suspensao = new Suspensao();
             var tanque = new TanqueGasolina();
             var virabrequim = new Virabrequim();
+            var valvulas = new Valvulas();
+            var velas = new Velas();
 
             tanque.Montar();
             cilindro.Montar();
@@ -16,13 +18,14 @@
             virabrequim.Instalar();
             cilindro.Montar();
             bateria.Instalar();
+            valvulas.Montar();
+            velas.Instalar();
 
+            var ie = new InjecaoEletronica(bateria, velas, valvulas);
 
-            var ie = new InjecaoEletronica(null, null, null);
             ie.Ligar();
             System.Threading.Thread.Sleep(100);
             ie.Desligar();
-
         }
     }
 }
