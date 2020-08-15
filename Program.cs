@@ -6,7 +6,9 @@ namespace ScrumFusca
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("Hello World!");
+            var cilindro = new Cilindro();
+
+            cilindro.Montar();
         }
     }
 }
