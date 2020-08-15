@@ -1,6 +1,4 @@
-﻿using System;
-
-namespace ScrumFusca
+﻿namespace ScrumFusca
 {
     class Program
     {
@@ -8,9 +6,11 @@ namespace ScrumFusca
         {
             var cilindro = new Cilindro();
             var suspensao = new Suspensao();
-
+            var virabrequim = new Virabrequim();
+            
             cilindro.Montar();
             suspensao.Montar();
+            virabrequim.Instalar();
         }
     }
 }
