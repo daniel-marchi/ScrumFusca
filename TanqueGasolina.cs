@@ -6,8 +6,10 @@ namespace ScrumFusca
     {
         public void Montar()
         {
+            var oldColor = Console.BackgroundColor;
             Console.BackgroundColor = ConsoleColor.Magenta;
             Console.WriteLine("* tanque de gasolina montado");
+            Console.BackgroundColor = oldColor;
         }
     }
 }
