@@ -7,6 +7,7 @@
             var cilindro = new Cilindro();
             var suspensao = new Suspensao();
             var virabrequim = new Virabrequim();
+            var valvulas = new Valvulas();
             var bateria = new Bateria();
             
             cilindro.Montar();
@@ -14,12 +15,12 @@
             virabrequim.Instalar();
             cilindro.Montar();
             bateria.Instalar();
+            valvulas.Montar();
 
-            var ie = new InjecaoEletronica(null, null, null);
+            var ie = new InjecaoEletronica(bateria, null, valvulas);
             ie.Ligar();
             System.Threading.Thread.Sleep(100);
             ie.Desligar();
-
         }
     }
 }
