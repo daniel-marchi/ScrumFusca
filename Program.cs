@@ -9,6 +9,7 @@
             var virabrequim = new Virabrequim();
             var valvulas = new Valvulas();
             var bateria = new Bateria();
+            var velas = new Velas();
             
             cilindro.Montar();
             suspensao.Montar();
@@ -16,8 +17,9 @@
             cilindro.Montar();
             bateria.Instalar();
             valvulas.Montar();
+            velas.Instalar();
 
-            var ie = new InjecaoEletronica(bateria, null, valvulas);
+            var ie = new InjecaoEletronica(bateria, velas, valvulas);
             ie.Ligar();
             System.Threading.Thread.Sleep(100);
             ie.Desligar();
