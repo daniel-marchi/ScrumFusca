@@ -6,7 +6,10 @@ namespace ScrumFusca
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("Hello World!");
+            var ie = new InjecaoEletronica("","","");
+            ie.Ligar();
+            System.Threading.Thread.Sleep(100);
+            ie.Desligar();
         }
     }
 }
