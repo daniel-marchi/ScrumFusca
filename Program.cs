@@ -4,6 +4,7 @@
     {
         static void Main(string[] args)
         {
+            var aneisPistao = new AneisPistao();
             var bateria = new Bateria();
             var cilindro = new Cilindro();
             var suspensao = new Suspensao();
@@ -13,6 +14,7 @@
             var valvulas = new Valvulas();
             var velas = new Velas();
 
+            aneisPistao.Instalar();
             cambio.Montar();
             tanque.Montar();
             cilindro.Montar();
