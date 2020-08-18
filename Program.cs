@@ -14,7 +14,7 @@
             var valvulas = new Valvulas();
             var velas = new Velas();
             var carter = new Carter();
-
+            var tubos = new TubosDeBorracha();
 
             aneisPistao.Instalar();
             carter.Instalar();
@@ -26,6 +26,7 @@
             cilindro.Montar();
             bateria.Instalar();
             valvulas.Montar();
+            tubos.Instalar();
             velas.Instalar();
 
             var ie = new InjecaoEletronica(bateria, velas, valvulas);
