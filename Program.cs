@@ -13,7 +13,9 @@
             var cambio = new Cambio();
             var valvulas = new Valvulas();
             var velas = new Velas();
+            var tubos = new TubosDeBorracha();
 
+            tubos.Instalar();
             aneisPistao.Instalar();
             cambio.Montar();
             tanque.Montar();
@@ -30,7 +32,6 @@
             ie.Ligar();
             System.Threading.Thread.Sleep(100);
             ie.Desligar();
-        }
-
+        }    
     }
 }
