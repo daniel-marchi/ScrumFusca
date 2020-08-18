@@ -13,8 +13,11 @@
             var cambio = new Cambio();
             var valvulas = new Valvulas();
             var velas = new Velas();
+            var carter = new Carter();
+
 
             aneisPistao.Instalar();
+            carter.Instalar();
             cambio.Montar();
             tanque.Montar();
             cilindro.Montar();
@@ -30,7 +33,6 @@
             ie.Ligar();
             System.Threading.Thread.Sleep(100);
             ie.Desligar();
-        }
-
+        }    
     }
 }
