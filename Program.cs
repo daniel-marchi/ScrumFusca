@@ -14,7 +14,8 @@
             virabrequim.Instalar();
             cilindro.Montar();
             bateria.Instalar();
-
+            Fiacao.Montar():
+            
         }
     }
 }
