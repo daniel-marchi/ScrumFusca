@@ -8,5 +8,10 @@ namespace ScrumFusca
         {
             Console.WriteLine("* lataria fabricada");
         }
+
+        public void Pintar()
+        {
+            Console.WriteLine("* lataria pintada");
+        }
     }
 }

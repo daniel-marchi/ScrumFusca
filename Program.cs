@@ -23,6 +23,7 @@ namespace ScrumFusca
 
             //Funilaria
             lataria.Fabricar();
+            lataria.Pintar();
             chassi.Fabricar();
 
             //Motor
