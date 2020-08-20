@@ -6,9 +6,10 @@ namespace ScrumFusca
     partial class Program
     {
         static void Main(string[] args)
-        {
+        { 
             var lataria = new Lataria();
             var chassi = new Chassi();
+            var portas = new Portas();
             var aneisPistao = new AneisPistao();
             var bateria = new Bateria();
             var cilindro = new Cilindro();
@@ -24,6 +25,7 @@ namespace ScrumFusca
             //Funilaria
             lataria.Fabricar();
             chassi.Fabricar();
+            portas.Instalar();
 
             //Motor
             aneisPistao.Instalar();
