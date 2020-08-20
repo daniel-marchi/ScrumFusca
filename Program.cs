@@ -4,6 +4,7 @@
     {
         static void Main(string[] args)
         {
+            var lataria = new Lataria();
             var aneisPistao = new AneisPistao();
             var bateria = new Bateria();
             var cilindro = new Cilindro();
@@ -15,6 +16,8 @@
             var velas = new Velas();
             var carter = new Carter();
             var tubos = new TubosDeBorracha();
+
+            lataria.Fabricar();
 
             aneisPistao.Instalar();
             carter.Instalar();
