@@ -1,10 +1,14 @@
-﻿namespace ScrumFusca
+﻿using ScrumFusca.Funilaria;
+
+namespace ScrumFusca
 {
+
     partial class Program
     {
         static void Main(string[] args)
         {
             var lataria = new Lataria();
+            var chassi = new Chassi();
             var aneisPistao = new AneisPistao();
             var bateria = new Bateria();
             var cilindro = new Cilindro();
@@ -17,8 +21,11 @@
             var carter = new Carter();
             var tubos = new TubosDeBorracha();
 
+            //Funilaria
             lataria.Fabricar();
+            chassi.Fabricar();
 
+            //Motor
             aneisPistao.Instalar();
             carter.Instalar();
             cambio.Montar();
@@ -35,8 +42,8 @@
             var ie = new InjecaoEletronica(bateria, velas, valvulas);
 
             ie.Ligar();
-            System.Threading.Thread.Sleep(100);
+            System.Threading.Thread.Sleep(1);
             ie.Desligar();
-        }    
+        }
     }
 }
