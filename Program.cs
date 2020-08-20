@@ -9,11 +9,8 @@ namespace ScrumFusca
         { 
             var lataria = new Lataria();
             var chassi = new Chassi();
-<<<<<<< HEAD
             var portas = new Portas();
-=======
             var latariachassi = new LatariaChassi();
->>>>>>> feature/MontarLatarianoChassi
             var aneisPistao = new AneisPistao();
             var bateria = new Bateria();
             var cilindro = new Cilindro();
@@ -29,11 +26,9 @@ namespace ScrumFusca
             //Funilaria
             lataria.Fabricar();
             chassi.Fabricar();
-<<<<<<< HEAD
             portas.Instalar();
-=======
             latariachassi.Montar();
->>>>>>> feature/MontarLatarianoChassi
+
 
             //Motor
             aneisPistao.Instalar();
