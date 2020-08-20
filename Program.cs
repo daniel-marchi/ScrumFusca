@@ -46,6 +46,7 @@ namespace ScrumFusca
             ie.Ligar();
             System.Threading.Thread.Sleep(1);
             ie.Desligar();
+
         }
     }
 }
